@@ -1,0 +1,176 @@
+/* Importation des polices : supprimée car elle est maintenant dans index.html */
+
+/* Styles généraux */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2c2c;
+    text-align: center;
+    color: white;
+}
+
+/* Bannière */
+.banner {
+    background-image: url("/SROT25/images/Background.jpeg"); /* Chemin corrigé */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Empêche l'image de se couper */
+    color: white;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    background: #b80000;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #8b0000;
+}
+
+/* Conteneurs */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background: #b80000;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: white;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    background: url("/SROT25/images/hermine.png") no-repeat center; /* Chemin corrigé */
+    background-size: contain;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Section Association */
+#association {
+    background: #8b0000;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+#association h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#association p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Boutons */
+.btn-blue {
+    background-color: #b80000;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.btn-blue:hover {
+    background-color: #8b0000;
+}
+
+/* Tableaux */
+.ranking table, .matches table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1a1a;
+    color: white;
+    box-shadow: none;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.ranking table::before, .matches table::before {
+    content: "";
+    background: url("/SROT25/images/hermine.png") no-repeat center; /* Chemin corrigé */
+    background-size: contain;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ranking th, .ranking td, .matches th, .matches td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ranking th, .matches th {
+    background-color: #8b0000;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ranking tr:nth-child(even), .matches tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ranking tr:hover, .matches tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Pied de page */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #1a1a1a;
+    color: white;
+}
